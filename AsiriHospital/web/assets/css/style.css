@@ -1,0 +1,120 @@
+/* General page setup */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding-top: 70px; /* Leave space for fixed navbar */
+}
+
+/* Navbar Customization */
+.navbar {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+
+
+/* Profile Card */
+.profile-card {
+    max-width: 600px;
+    margin: 40px auto;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    padding: 30px 40px;
+}
+
+.profile-card h3 {
+    font-weight: bold;
+    margin-bottom: 25px;
+    color: #343a40;
+    text-align: center;
+}
+
+.profile-card p {
+    font-size: 1rem;
+    margin-bottom: 12px;
+}
+
+.profile-card p strong {
+    width: 120px;
+    display: inline-block;
+    color: #495057;
+}
+
+/* Dashboard Icons (for index.jsp) */
+.dashboard-icon-grid {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.dashboard-icon-grid a {
+    text-decoration: none;
+    color: #333;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.dashboard-icon-grid img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.dashboard-icon-grid a:hover img {
+    transform: scale(1.1);
+}
+
+.dashboard-icon-grid a:hover {
+    color: #0d6efd;
+}
+
+/* Success Message */
+.alert-success {
+    border-radius: 6px;
+    padding: 10px 15px;
+    font-size: 0.95rem;
+}
+
+/* Logout Button */
+.logout-btn {
+    margin-top: 20px;
+    float: right;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .dashboard-icon-grid img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .profile-card {
+        padding: 25px 20px;
+    }
+}
+/* Make the layout take full height */
+html, body {
+    height: 100%;
+}
+
+/* Flexbox layout to push footer to bottom */
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Main content should grow to fill available space */
+.main-content {
+    flex: 1 0 auto;
+}
+
+/* Footer stays at the bottom */
+footer {
+    flex-shrink: 0;
+    background-color: #343a40;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: auto;
+}
